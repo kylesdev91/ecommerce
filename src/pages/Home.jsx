@@ -1,9 +1,11 @@
 import React from 'react';
+import Announcement from '../components/Announcment';
 import Navbar from '../components/Navbar';
 
 const Home = () => {
   return (
-    <div className='container'>
+    <div>
+      <Announcement />
       <Navbar />
     </div>
   );
