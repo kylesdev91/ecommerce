@@ -29,34 +29,63 @@ export const categories = [
 export const popularProducts = [
   {
     id: 1,
-    img: 'https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png',
+    img: 'https://www.worldofseeds.com/media/catalog/product/cache/1/image/600x600/9df78eab33525d08d6e5fb8d27136e95/o/r/original_auto_white_widow_3_4.jpg',
+    name: 'Test',
   },
   {
     id: 2,
-    img: 'https://cdn.shopify.com/s/files/1/0101/4832/products/angela_2_1024x1024.jpg?v=1645831857',
+    img: 'https://images.leafly.com/flower-images/gg-4.jpg',
   },
   {
     id: 3,
-    img: 'https://www.prada.com/content/dam/pradanux_products/U/UCS/UCS319/1YOTF010O/UCS319_1YOT_F010O_S_182_SLF.png',
+    img: 'https://leafly-public.imgix.net/strains/reviews/photos/chiquita-banana__primary_3504.jpg',
   },
   {
     id: 4,
-    img: 'https://www.burdastyle.com/pub/media/catalog/product/cache/7bd3727382ce0a860b68816435d76e26/107/BUS-PAT-BURTE-1320516/1170x1470_BS_2016_05_132_front.png',
+    img: 'https://images.leafly.com/flower-images/defaults/purple/strain-19.png',
   },
   {
     id: 5,
-    img: 'https://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.png',
+    img: 'https://flavorfix.com/wp-content/uploads/2022/03/Purple-Punch-Strain.jpg',
   },
   {
     id: 6,
-    img: 'https://d3o2e4jr3mxnm3.cloudfront.net/Rocket-Vintage-Chill-Cap_66374_1_lg.png',
+    img: 'https://leafly-public.imgix.net/strains/photos/HIhdYnYSQICmDZpoCnO1_Zkittlez.png',
   },
   {
     id: 7,
-    img: 'https://images.stylight.net/image/upload/e_trim/t_web_product_330x440max_nobg/q_auto:eco,f_auto/easm09chaznqko0yptpw.jpg',
+    img: 'https://images.leafly.com/flower-images/durban-poison.jpg',
   },
   {
     id: 8,
-    img: 'https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png',
+    img: 'https://images.leafly.com/flower-images/super-silver-haze.png',
+  },
+  {
+    id: 9,
+    img: 'https://images.weedmaps.com/strains/000/000/101/avatar/original/1560552818-171222_Bonsai-Cultivation_Green-Crack_1.jpg',
+  },
+  {
+    id: 10,
+    img: 'https://leafly-public.imgix.net/strains/reviews/photos/big-bud__primary_9faf.jpg',
+  },
+  {
+    id: 11,
+    img: 'https://www.leafbuyer.com/blogs/content/uploads/2018p/11/pile-of-marijuana-shake-700px.jpg',
+  },
+  {
+    id: 12,
+    img: 'https://carolinescannabis.com/wp-content/uploads/2021/02/chronic.jpg',
+  },
+  {
+    id: 13,
+    img: 'https://leafly-public.imgix.net/strains/photos/UILdlZQQuN969injI7OQ_FireOG.png',
+  },
+  {
+    id: 14,
+    img: 'https://buddocs.org/wp-content/uploads/small-buds.jpg',
+  },
+  {
+    id: 15,
+    img: 'https://goddessdelivers.com/pub/media/catalog/product/cache/4dcdbe1c656cc44e9d78b7ae4cec57ab/1/4/14g_-_super_sour_diesel_smalls_sativa_strain_-_budbud_2.jpg',
   },
 ];
