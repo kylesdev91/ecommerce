@@ -21,6 +21,13 @@ const TopButton = styled.button`
   cursor: pointer;
 `;
 
+const TopTexts = styled.div``;
+const TopText = styled.span`
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 0px 10px;
+`;
+
 const Bottom = styled.div``;
 
 const Cart = () => {
@@ -31,6 +38,10 @@ const Cart = () => {
         <Title>YOUR BAG</Title>
         <Top>
           <TopButton>CONTINUE SHOPPING</TopButton>
+          <TopTexts>
+            <TopText>Shopping Bag(2)</TopText>
+            <TopText>Your Wishlist(0)</TopText>
+          </TopTexts>
           <TopButton>CHECKOUT NOW</TopButton>
         </Top>
         <Bottom></Bottom>
