@@ -13,12 +13,17 @@ const Top = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 20px;
 `;
 
 const TopButton = styled.button`
   padding: 10px;
   font-weight: 600px;
   cursor: pointer;
+  border: ${(props) => props.type === 'filled' && 'none'};
+  background-color: ${(props) =>
+    props.type === 'filled' ? 'black' : 'transparent'};
+  color: ${(props) => props.type === 'filled' && 'white'};
 `;
 
 const TopTexts = styled.div``;
@@ -28,7 +33,12 @@ const TopText = styled.span`
   margin: 0px 10px;
 `;
 
-const Bottom = styled.div``;
+const Bottom = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+const Info = styled.div``;
+const Summary = styled.div``;
 
 const Cart = () => {
   return (
@@ -42,9 +52,12 @@ const Cart = () => {
             <TopText>Shopping Bag(2)</TopText>
             <TopText>Your Wishlist(0)</TopText>
           </TopTexts>
-          <TopButton>CHECKOUT NOW</TopButton>
+          <TopButton type='filled'>CHECKOUT NOW</TopButton>
         </Top>
-        <Bottom></Bottom>
+        <Bottom>
+          <Info>info</Info>
+          <Summary>summary</Summary>
+        </Bottom>
       </Wrapper>
     </Container>
   );
