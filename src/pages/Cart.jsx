@@ -1,3 +1,4 @@
+import { Add, Remove } from '@material-ui/icons';
 import styled from 'styled-components';
 import Navbar from '../components/Navbar';
 
@@ -68,8 +69,52 @@ const PriceDetail = styled.div`
   justify-content: center;
 `;
 
+const ProductAmountContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+`;
+const ProductAmount = styled.div`
+  font-size: 24px;
+  margin: 5px;
+`;
+const ProductPrice = styled.div`
+  font-size: 30px;
+  font-weight: 200;
+`;
+
+const Hr = styled.hr`
+  background-color: #eee;
+  border: none;
+  height: 1px;
+`;
+
 const Summary = styled.div`
   flex: 1;
+  border: 0.5px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+  height: 50vh;
+`;
+
+const SummaryTitle = styled.h1`
+  font-weight: 200;
+`;
+const SummaryItem = styled.div`
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: ${(props) => props.type === 'total' && '500'};
+  font-size: ${(props) => props.type === 'total' && '24px'};
+`;
+const SummaryItemText = styled.span``;
+const SummaryItemPrice = styled.span``;
+const Button = styled.button`
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
 `;
 
 const Cart = () => {
@@ -93,17 +138,65 @@ const Cart = () => {
                 <Image src='https://pagesix.com/wp-content/uploads/sites/3/2022/01/new-blanace.png' />
                 <Details>
                   <ProductName>
-                    <b>Product:</b>JESSIE THUNDER SHOES
+                    <b>Product:</b> JESSIE THUNDER SHOES
                   </ProductName>
                   <ProductId>
                     <b>ID:</b> 84393932931
                   </ProductId>
                 </Details>
               </ProductDetail>
-              <PriceDetail>price</PriceDetail>
+              <PriceDetail>
+                <ProductAmountContainer>
+                  <Add />
+                  <ProductAmount>2</ProductAmount>
+                  <Remove />
+                </ProductAmountContainer>
+                <ProductPrice> $ 30</ProductPrice>
+              </PriceDetail>
+            </Product>
+            <Hr />
+            <Product>
+              <ProductDetail>
+                <Image src='https://ih1.redbubble.net/image.2547717787.7270/ssrco,slim_fit_t_shirt,flatlay,fafafa:ca443f4786,front,wide_portrait,750x1000-bg,f8f8f8.jpg' />
+                <Details>
+                  <ProductName>
+                    <b>Product:</b> HAKURA T-SHIRT
+                  </ProductName>
+                  <ProductId>
+                    <b>ID:</b> 84393932931
+                  </ProductId>
+                </Details>
+              </ProductDetail>
+              <PriceDetail>
+                <ProductAmountContainer>
+                  <Add />
+                  <ProductAmount>2</ProductAmount>
+                  <Remove />
+                </ProductAmountContainer>
+                <ProductPrice> $ 20</ProductPrice>
+              </PriceDetail>
             </Product>
           </Info>
-          <Summary>summary</Summary>
+          <Summary>
+            <SummaryTitle>ORDER SUMMARY</SummaryTitle>
+            <SummaryItem>
+              <SummaryItemText>Subtotal</SummaryItemText>
+              <SummaryItemPrice>$ 80</SummaryItemPrice>
+            </SummaryItem>
+            <SummaryItem>
+              <SummaryItemText>Estimated Shipping</SummaryItemText>
+              <SummaryItemPrice>$ 5.90</SummaryItemPrice>
+            </SummaryItem>
+            <SummaryItem>
+              <SummaryItemText>Shipping Discount</SummaryItemText>
+              <SummaryItemPrice>$ -5.90</SummaryItemPrice>
+            </SummaryItem>
+            <SummaryItem type='total'>
+              <SummaryItemText>Total</SummaryItemText>
+              <SummaryItemPrice>$ 80</SummaryItemPrice>
+            </SummaryItem>
+            <Button>CHECKOUT NOW</Button>
+          </Summary>
         </Bottom>
       </Wrapper>
     </Container>
