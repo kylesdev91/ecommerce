@@ -37,8 +37,40 @@ const Bottom = styled.div`
   display: flex;
   justify-content: space-between;
 `;
-const Info = styled.div``;
-const Summary = styled.div``;
+const Info = styled.div`
+  flex: 3;
+`;
+
+const Product = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+const ProductDetail = styled.div`
+  flex: 2;
+  display: flex;
+`;
+const Image = styled.img`
+  width: 200px;
+`;
+const Details = styled.div`
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+`;
+const ProductName = styled.span``;
+const ProductId = styled.span``;
+const PriceDetail = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Summary = styled.div`
+  flex: 1;
+`;
 
 const Cart = () => {
   return (
@@ -55,7 +87,22 @@ const Cart = () => {
           <TopButton type='filled'>CHECKOUT NOW</TopButton>
         </Top>
         <Bottom>
-          <Info>info</Info>
+          <Info>
+            <Product>
+              <ProductDetail>
+                <Image src='https://pagesix.com/wp-content/uploads/sites/3/2022/01/new-blanace.png' />
+                <Details>
+                  <ProductName>
+                    <b>Product:</b>JESSIE THUNDER SHOES
+                  </ProductName>
+                  <ProductId>
+                    <b>ID:</b> 84393932931
+                  </ProductId>
+                </Details>
+              </ProductDetail>
+              <PriceDetail>price</PriceDetail>
+            </Product>
+          </Info>
           <Summary>summary</Summary>
         </Bottom>
       </Wrapper>
